@@ -1,4 +1,4 @@
-# App - Simple web app
+# Simple web app
 ## I used
 * Java
 * Jetty
