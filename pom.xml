@@ -67,6 +67,12 @@
             <artifactId>h2</artifactId>
             <version>${h2.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.28.Final</version>
+        </dependency>
 
 
     </dependencies>
@@ -109,8 +115,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
 
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>10</source>
+                    <target>10</target>
                 </configuration>
             </plugin>
         </plugins>

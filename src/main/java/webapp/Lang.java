@@ -1,7 +1,26 @@
 package webapp;
 
+
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name = "languages")
 public class Lang {
 
+    // Hibernate (JPA) needs it.
+    @SuppressWarnings("unused")
+    public Lang() {
+    }
+
+    @Id
+    @GeneratedValue(generator = "inc")
+    @GenericGenerator(name = "inc", strategy = "increment")
     private Integer id;
     private String welcomeMsg;
     private String code;
