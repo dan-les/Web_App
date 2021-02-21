@@ -27,6 +27,7 @@ public class LangRepository {
     public Optional<Lang> findById(Integer id) {
         var session = HibernateUtil.getSessionFactory().openSession();
         var transaction = session.beginTransaction();
+
         var result = session.get(Lang.class, id);
 
         transaction.commit();

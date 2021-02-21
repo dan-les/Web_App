@@ -33,6 +33,7 @@ public class HelloServlet extends HttpServlet {
 
         String name = req.getParameter(NAME_PARAM);
         String lang = req.getParameter(LANG_PARAM);
+
         resp.getWriter().write(service.prepareGreeting(name, lang));
     }
 }

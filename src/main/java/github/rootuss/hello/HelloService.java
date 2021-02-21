@@ -23,11 +23,12 @@ public class HelloService {
         this.repository = repository;
     }
 
+
     String prepareGreeting(String name) {
         return prepareGreeting(name, null);
     }
 
-     String prepareGreeting(String name, String lang) {
+    String prepareGreeting(String name, String lang) {
         Integer langId;
         try {
             langId = Optional.ofNullable(lang).map(Integer::valueOf).orElse(FALLBACK_LANG.getId());
