@@ -1,4 +1,4 @@
-package webapp;
+package github.rootuss;
 
 import org.eclipse.jetty.annotations.AnnotationConfiguration;
 import org.eclipse.jetty.plus.webapp.EnvConfiguration;
@@ -11,7 +11,7 @@ import org.eclipse.jetty.webapp.*;
 public class App {
     public static void main(String[] args) throws Exception {
         WebAppContext webapp = new WebAppContext();
-        webapp.setResourceBase("src/main/java/webapp");
+        webapp.setResourceBase("src/main/webapp");
         webapp.setContextPath("/");
         webapp.setConfigurations(new Configuration[]
                 {

@@ -1,4 +1,4 @@
-package webapp;
+package github.rootuss;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

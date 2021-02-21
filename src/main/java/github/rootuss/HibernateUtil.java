@@ -1,4 +1,4 @@
-package webapp;
+package github.rootuss;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
