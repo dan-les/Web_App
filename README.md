@@ -5,3 +5,7 @@
 * SQL - H2
 * Hibernate
 * Flywaydb
+
+
+* Pure.css
+* Object Mapper

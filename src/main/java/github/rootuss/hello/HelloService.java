@@ -1,5 +1,7 @@
-package github.rootuss;
+package github.rootuss.hello;
 
+import github.rootuss.lang.Lang;
+import github.rootuss.lang.LangRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,7 +27,7 @@ public class HelloService {
         return prepareGreeting(name, null);
     }
 
-    String prepareGreeting(String name, String lang) {
+     String prepareGreeting(String name, String lang) {
         Integer langId;
         try {
             langId = Optional.ofNullable(lang).map(Integer::valueOf).orElse(FALLBACK_LANG.getId());

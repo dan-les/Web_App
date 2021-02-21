@@ -13,6 +13,10 @@ public class HibernateUtil {
 
     }
 
+    public static SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+
     private static SessionFactory buildSesionFactory() {
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
                 .configure() // configures settings from hibernate.cfg.xml
@@ -31,8 +35,6 @@ public class HibernateUtil {
         }
     }
 
-    static SessionFactory getSessionFactory() {
-        return sessionFactory;
-    }
+
 
 }

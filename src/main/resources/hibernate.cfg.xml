@@ -35,7 +35,7 @@
         <property name="hbm2ddl.auto">validate</property>
 
         <!-- Names the annotated entity class -->
-        <mapping class="github.rootuss.Lang"/>
+        <mapping class="github.rootuss.lang.Lang"/>
 
     </session-factory>
 

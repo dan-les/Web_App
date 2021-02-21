@@ -1,4 +1,4 @@
-package github.rootuss;
+package github.rootuss.lang;
 
 
 import org.hibernate.annotations.GenericGenerator;
