@@ -8,7 +8,7 @@ import java.util.Optional;
 public class LangRepository {
 
 
-    List<Lang> findAll() {
+    public List<Lang> findAll() {
         var session = HibernateUtil.getSessionFactory().openSession();
         var transaction = session.beginTransaction();
 

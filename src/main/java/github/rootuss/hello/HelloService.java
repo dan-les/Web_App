@@ -24,18 +24,9 @@ public class HelloService {
     }
 
 
-    String prepareGreeting(String name) {
-        return prepareGreeting(name, null);
-    }
+    String prepareGreeting(String name, Integer langId) {
 
-    String prepareGreeting(String name, String lang) {
-        Integer langId;
-        try {
-            langId = Optional.ofNullable(lang).map(Integer::valueOf).orElse(FALLBACK_LANG.getId());
-        } catch (NumberFormatException exception) {
-            logger.warn("NON-NUMERIC LANGUAGE id USED: " + lang);
-            langId = FALLBACK_LANG.getId();
-        }
+        langId = Optional.ofNullable(langId).orElse(FALLBACK_LANG.getId());
 
         String welcomeMsg = repository.findById(langId).orElse(FALLBACK_LANG).getWelcomeMsg();
         String nameToWelcome = Optional.ofNullable(name).orElse(FALLBACK_NAME);

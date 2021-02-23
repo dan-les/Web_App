@@ -37,4 +37,6 @@ public class LangServlet extends HttpServlet {
         objectMapper.writeValue(resp.getOutputStream(), langService.findAll());
 
     }
+
+
 }
